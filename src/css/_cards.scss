@@ -9,6 +9,11 @@
   border-radius: 5px;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 
+
+  @media only screen and (max-width: $bp-tiny){
+    padding: 2 rem;
+  }
+
   & > *:not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -29,6 +34,13 @@
       height: auto;
     }
 
+    @media only screen and (max-width: $bp-smallest){
+      width: 11rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny){
+      width: 9rem;
+    }
     &--temp {
       font-weight: 300;
       font-size: 5.5rem;
@@ -63,7 +75,7 @@
   flex-direction: column;
   justify-content: center;
 
-  & > *:not(:last-child) {
+  & > * {
     margin-bottom: 3rem;
   }
 
@@ -95,6 +107,15 @@
         width: 7rem;
         height: auto;
         margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-smallest){
+          width: 6rem;
+          margin-right: 1rem;
+        }
+
+        @media only screen and (max-width: $bp-tiny){
+          width: 5rem;
+        }
       }
 
       &__text {
@@ -139,6 +160,10 @@
       &--icon {
         width: 5.5rem;
         height: auto;
+
+        @media only screen and (max-width: $bp-tiny){
+          width: 4.5rem;
+        }
       }
     }
   }
