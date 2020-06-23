@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Weather App using an API",
   "main": "index.js",
+  "homepage": "https://vvvirenyu.github.io/vanilla-weather-app",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+
   },
   "author": "fidalgo",
   "license": "ISC",
